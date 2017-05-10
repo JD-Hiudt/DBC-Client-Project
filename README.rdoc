@@ -1,5 +1,7 @@
 Web based social portal facilitating the sharing of recreational information
 
-Utilized 3rd party API to seed database.
+Utilized 3rd party API to seed database
+
+Implemented Travis CI for continuous testing and integration.
 
 Worked directly with client to maintain client exceptions. 
