@@ -6,7 +6,7 @@ games.each do |each_game|
   Game.create!(title: each_game["name"], thumbnail: each_game["thumbnail"], image: each_game["image"], player_count_min: each_game["minPlayers"], player_count_max: each_game["maxPlayers"], playing_time: each_game["playingTime"])
 end
 
-50.times do
+100.times do
   user_info = {
     email: Faker::Internet.email,
     username: Faker::Internet.user_name,
@@ -15,10 +15,10 @@ end
   User.create!(user_info)
 end
 
-1000.times do
+5000.times do
   ownership_info = {
-    game_id: rand(1..100),
-    owner_id: rand(1..15)
+    game_id: rand(1..575),
+    owner_id: rand(1..100)
   }
   Ownership.create!(ownership_info)
 end
